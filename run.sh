@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -p 80:80 -v docker/apache-base/src/:/var/www/my_website -t keirua/apache-base
+docker run -v /home/clem/dev/docker-apache/docker/apache-base/src/:/var/www/my_website -p 80:80 -t keirua/apache-base

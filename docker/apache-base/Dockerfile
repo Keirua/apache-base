@@ -13,6 +13,7 @@ ADD ./conf/apache-config.conf /etc/apache2/sites-available/apache-config
 RUN rm /etc/apache2/sites-enabled/*
 RUN ln -s /etc/apache2/sites-available/apache-config /etc/apache2/sites-enabled/default
 
+#Could work but requires to rebuild the image after every modification
 #RUN mkdir -p /var/www/my_app
 #ADD src/index.php /var/www/my_app/index.php
 
