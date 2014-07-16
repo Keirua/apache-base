@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t keirua/apache-base ./docker/apache-base
+docker build --rm -t keirua/apache-base ./docker/apache-base
